@@ -1,4 +1,5 @@
 import 'package:flame/flame.dart';
+import 'package:flame/flame_audio.dart';
 import 'package:flame/util.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
@@ -13,8 +14,8 @@ void main() async {
     await Flame.util.setPortrait();
     await Flame.util.fullScreen();
   }
-
-  Flame.images.loadAll(<String>[
+  //await Flame.audio.load('bip.mp3');
+  await Flame.images.loadAll(<String>[
     'bird-0.png',
     'bird-1.png',
     'bird-0-left.png',

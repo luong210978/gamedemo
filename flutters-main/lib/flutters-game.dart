@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:flame/flame.dart';
+import 'package:flame/flame_audio.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutters/components/background.dart';
@@ -36,6 +38,7 @@ class FluttersGame extends Game {
   double floorHeight = 250;
   // Game Score
   double currentHeight = 0;
+  final FlameAudio audio=FlameAudio();
   FluttersGame(screenDimensions) {
     resize(screenDimensions);
     skyBackground = Background(this, 0, 0, viewport.width, viewport.height);
@@ -161,6 +164,7 @@ class FluttersGame extends Game {
       birdPlayer.startFlutter();
       isFluttering = true;
       flutterValue = flutterIntensity;
+      Flame.audio.play('bip.mp3');
       return;
     }
     if (gameOverDialog.playButton.contains(d.globalPosition)) {

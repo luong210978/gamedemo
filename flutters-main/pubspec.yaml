@@ -44,7 +44,7 @@ flutter:
     - assets/cloud-1.png
     - assets/cloud-2.png
     - assets/cloud-3.png
-
+    - assets/bip.mp3
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
