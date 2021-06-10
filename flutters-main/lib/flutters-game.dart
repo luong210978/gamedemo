@@ -180,7 +180,7 @@ class FluttersGame extends Game {
   }
 
   _launchURL() async {
-    const url = 'https://www.facebook.com/thoconxinhxan.nhinvexaxam/';
+    const url = 'https://pub.dev/packages/flame';
     await launch(url);
   }
 }
